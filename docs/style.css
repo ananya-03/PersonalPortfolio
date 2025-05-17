@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 
+
 @keyframes moveDown {
   0% {
     height: 0;
@@ -65,7 +66,7 @@
 }
 
 /* Responsive styles: mobile and tablets */
-@media (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
   /* Show hamburger */
 
   #menu-btn {
@@ -186,6 +187,11 @@
     padding: 10px ;
   }
 
+  #edu, #skill, #proj, #exp, #pub, #contct{
+    font-size: 50px;
+  }
+
+
   #heading #edu-year{
     font-size: medium;
 text-align: left;
@@ -215,13 +221,14 @@ display: inline;
   left: -40px;
 }
 
+
 #job-card-2, #job-card-4{
   margin-left: 0%;
-  width: 120%;
+  width: 100%;
 }
 
 #job-card-1, #job-card-3{
-  width: 120%;
+  width: 100%;
 }
 
 #job-card-1 span, #job-card-3 span{
@@ -230,14 +237,11 @@ display: inline;
   border-left: transparent;
 }
 
-#publications{
+#publications , #contact{
   padding: 10px;
 
 }
 
-#pub{
-  font-size: 4rem;
-}
 
 #card-1 a, #card-2 a, #card-3 a, #card-4 a{
   flex-direction: column;

@@ -11,7 +11,7 @@ window.addEventListener('load', () => {
             item.classList.remove('opacity-0', 'translate-y-4');
           }, 1800 + index * 400); // start after hero (1.8s), then stagger by 400ms
         });
-      }, 1500);
+      }, 500);
     });
     const cards = document.querySelectorAll('[id^="job-card"]');
 

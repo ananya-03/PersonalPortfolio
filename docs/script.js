@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
       // Reveal the entire hero section first
-      setTimeout(() => {
+      // setTimeout(() => {
         const hero = document.getElementById('hero');
         hero.classList.remove('opacity-0', 'translate-y-4');
 
@@ -9,9 +9,9 @@ window.addEventListener('load', () => {
         listItems.forEach((item, index) => {
           setTimeout(() => {
             item.classList.remove('opacity-0', 'translate-y-4');
-          }, 1800 + index * 400); // start after hero (1.8s), then stagger by 400ms
+          }, 300 + index * 200); // start after hero (1.8s), then stagger by 400ms
         });
-      }, 500);
+      // }, 500);
     });
     const cards = document.querySelectorAll('[id^="job-card"]');
 

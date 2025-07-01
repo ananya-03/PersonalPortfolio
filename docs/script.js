@@ -28,7 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     cards.forEach(card => observer.observe(card));
 
-  document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("load", () => {
     const sections = document.querySelectorAll("section[id]");
     const navLinks = document.querySelectorAll("#navbar a");
 

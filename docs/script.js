@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
       // Reveal the entire hero section first
       // setTimeout(() => {
         const hero = document.getElementById('hero');
@@ -28,7 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     cards.forEach(card => observer.observe(card));
 
-  document.addEventListener("load", () => {
+  document.addEventListener("DOMContentLoaded", () => {
     const sections = document.querySelectorAll("section[id]");
     const navLinks = document.querySelectorAll("#navbar a");
 

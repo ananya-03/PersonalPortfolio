@@ -1,4 +1,4 @@
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
       // Reveal the entire hero section first
       // setTimeout(() => {
         const hero = document.getElementById('hero');

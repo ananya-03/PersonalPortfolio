@@ -1,4 +1,4 @@
-// window.addEventListener('load', () => {
+// window.addEventListener('DOMContentLoaded', () => {
 //   // Reveal the entire hero section first
 //   // setTimeout(() => {
 //   const hero = document.getElementById('hero');
@@ -13,25 +13,44 @@
 //   });
 //   // }, 500);
 // });
+document.addEventListener('DOMContentLoaded', () => {
+  const hero = document.getElementById('hero');
 
-document.addEventListener("DOMContentLoaded", () => {
-  const hero = document.getElementById("hero");
-  const heroText = document.getElementById("hero-text");
-
-  // LCP-safe transform animation
-  requestAnimationFrame(() => {
-    hero.classList.remove("opacity-0", "translate-y-6");
-    heroText.classList.remove( "opacity-0", "translate-y-6");
-
+  // Force initial paint
+requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      hero.classList.remove('opacity-0', 'translate-y-6');
+    });
   });
 
-  // staggered fade-in for text (safe)
-  document.querySelectorAll(".fade-item").forEach((item, index) => {
+  // Stagger list items
+  const listItems = document.querySelectorAll('.fade-item');
+  listItems.forEach((item, index) => {
     setTimeout(() => {
-      item.classList.remove("opacity-0", "translate-y-4");
+      item.classList.remove('opacity-0', 'translate-y-4');
     }, 300 + index * 200);
   });
 });
+
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   const hero = document.getElementById("hero");
+//   const heroText = document.getElementById("hero-text");
+
+//   // LCP-safe transform animation
+//   requestAnimationFrame(() => {
+//     hero.classList.remove("opacity-0", "translate-y-6");
+//     heroText.classList.remove( "opacity-0", "translate-y-6");
+
+//   });
+
+//   // staggered fade-in for text (safe)
+//   document.querySelectorAll(".fade-item").forEach((item, index) => {
+//     setTimeout(() => {
+//       item.classList.remove("opacity-0", "translate-y-4");
+//     }, 300 + index * 200);
+//   });
+// });
 
 
 const cards = document.querySelectorAll('[id^="job-card"]');

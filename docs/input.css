@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom utilities for text-shadow (not included in Tailwind by default) */
+@layer utilities {
+  .text-shadow-lg {
+    text-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .text-shadow-\[#5f2155\] {
+    text-shadow: 0 4px 8px #5f2155;
+  }
+}

@@ -287,13 +287,16 @@ header {
   #job-card-0,
   #job-card-2,
   #job-card-4 {
-    margin-right: 0%;
+    /* margin-right: 0%; */
+    padding-right: 0%;
     width: 100%;
+    padding-bottom: 10;
   }
 
   #job-card-1,
   #job-card-3 {
     width: 100%;
+    padding-right: 0%;
   }
 
   #job-card-0 span,

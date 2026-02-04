@@ -2,7 +2,7 @@ window.addEventListener('load', () => {
       // Reveal the entire hero section first
       // setTimeout(() => {
         const hero = document.getElementById('hero');
-        hero.classList.remove('opacity-0', 'translate-y-4');
+        hero.classList.remove('opacity-0.1', 'translate-y-4');
 
         // Now animate each <li> with a staggered delay
         const listItems = document.querySelectorAll('.fade-item');

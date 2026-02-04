@@ -11,6 +11,7 @@
   <meta name="author" content="Ananya Singh">
   <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
   <link href="output.css" rel="stylesheet">
+  <link rel="preload" as="image" href="images/hero/purple1 copy.webp" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -75,7 +76,10 @@
       <div id="hero"
         class="flex justify-around items-center px-10 pb-10 opacity-0 translate-y-4 transition-all duration-1500 ease-in-out">
         <!-- Profile image -->
-        <img src="images/hero/purple1.PNG" alt="Ananya Singh" class="relative w-[500px] rounded-3xl " />
+        <img src="images/hero/purple1 copy.webp" alt="Ananya Singh" class="relative w-[500px] rounded-3xl " />
+        <!-- <img src="images/hero/purple1 copy.webp" alt="Ananya Singh" width="500" height="650" fetchpriority="high" -->
+        <!-- loading="eager" decoding="async" class="relative w-[500px] rounded-3xl" /> -->
+
         <div id="hero-text" class=" flex flex-col justify-center px-10">
           <h1 class="px-10 mt-25 text-9xl font-bold text-[#a0258b] text-start
                      drop-shadow-[3px_3px_0_white] md:drop-shadow-[7px_7px_0_white]">ANANYA SINGH</h1>
@@ -191,8 +195,7 @@
       <div id="container-skills" class="w-full h-300px p-10">
         <h1 id="skill" class="pb-20  text-7xl font-bold text-[#a0258b] text-start
               drop-shadow-[3px_3px_0_white]">Skills</h1>
-        <div id="skills-cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 place-items-center"
->
+        <div id="skills-cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 place-items-center">
           <div id="web-dev" class="flex flex-col w-80 h-auto min-h-[520px] ">
             <i class="fa-brands fa-react text-white pb-5 fa-5x"></i>
             <h1 class="text-xl text-white pb-5 font-bold ">Web Development</h1>
@@ -306,7 +309,7 @@
               drop-shadow-[3px_3px_0_white]">Projects
       </h1>
       <div id="project-cards" class="p-10 flex flex-row justify-center flex-wrap items-center gap-10">
-      <!-- <div id="project-cards" class="p-10 grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto"> -->
+        <!-- <div id="project-cards" class="p-10 grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto"> -->
         <!-- <a href="https://youtu.be/Cwx5shNOpGY?si=kB6TKV4QuAZ2adsA" target="_blank" class="hover:scale-110 transition"> -->
         <div id="Genai"
           class="border w-100 h-150 border-white flex  flex-col justify-center items-center p-5 rounded-3xl">
@@ -381,7 +384,7 @@
               Applied k-fold cross-validation to ensure robust performance estimation
               and reduce overfitting on leaderboard-driven evaluation.
             </li>
-          
+
           </ul>
 
         </div>
